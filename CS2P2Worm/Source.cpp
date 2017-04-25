@@ -2,6 +2,7 @@
 // Professor Perry Scott Kivolowitz
 // 3/28/2017
 // CS2 P2
+// This is a fun game, but the code still has issues that need to be resolved.
 
 #include <iostream>
 #include <vector>
@@ -163,23 +164,6 @@ bool Worm::Move(DIR d, Food & f, int & score)
 	// use a temporary POS and then add to segments.at(0) after the switch like we did in class.
 	POS temp(0, 0);
 
-	/*switch (d)
-	{
-	case UP:
-		temp.l--;
-		break;
-
-	case DOWN:
-		temp.l++;
-		break;
-	case LEFT:
-		temp.c--;
-		break;
-		
-	case RIGHT:
-		temp.c++;
-		break;
-	}*/
 	switch (d)
 	{
 	case UP:
